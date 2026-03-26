@@ -31,7 +31,7 @@ if st.session_state.animals:
 
   remove_name = st.selectbox("избери животно за премахване", names)
 
-  if st.button("премахни")
+  if st.button("премахни"):
     for a in st.session_state.animals:
       if a["име"] == remove_name:
         st.session_state.animals.remove(a)
