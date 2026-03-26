@@ -14,7 +14,7 @@ if st.button("Добави"):
   if name and description and image_url:
     st.session_state.animals.append({
       "име" : name
-      "описание" : description
+      "описание" : description,
       "картинка" : image_url      
     })
     st.success(f"{name} е добавено.")
