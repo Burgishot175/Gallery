@@ -13,7 +13,7 @@ image_url = st.text_input("URL на картинка")
 if st.button("Добави"):
   if name and description and image_url:
     st.session_state.animals.append({
-      "име" : name
+      "име" : name,
       "описание" : description,
       "картинка" : image_url      
     })
