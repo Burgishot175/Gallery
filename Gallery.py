@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Галерия от любими животни")
 
-if animals not in st.session_state:
+if "animals" not in st.session_state:
   st.session_state.animals = []
 
 st.header("Добави ново животно")
